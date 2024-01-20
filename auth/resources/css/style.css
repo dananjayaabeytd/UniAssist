@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root{
+  --basemargin:8px;
+  --secondmargin:4px;
+  --basecolor:rgb(26, 10, 70);
+  --secondarycolor:rgb(231, 231, 231);
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.container .top-navbar{
+    min-height: 10vh;
+    background-color: rgb(26, 10, 70);
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 50px 0px 55px;
+}
+.barnd-icon{
+  height: 40px;
+}
+.container .top-navbar .profile{
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .top-navbar .menu{
+  font-size: 22px;
+  display: none;
+
+}
+.container main {
+  overflow: hidden;
+  display: flex;
+}
+
+.active {
+  font-weight: bold;
+ color: rgb(45, 6, 104) !important;
+ background-color: rgb(213, 215, 248) ;
+}
+
+.container main .main-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.container main .main-content .content {
+  overflow: auto;
+  padding: 30px;
+  background-color: rgb(231, 231, 231);
+  width: 100%;
+  min-height: 90vh;
+}
+
+.footer{
+    text-align: center;
+    background-color: rgb(231, 231, 231);
+    color: gray;
+    margin-bottom: 0px;
+    margin-top: auto;
+}
+
+/* mobile responce */
+@media screen and (max-width: 480px) {
+    .container main .side-navbar {
+        position: fixed;
+        width: 60vw;
+        right: -320px;
+        transition: right 0.3s ease-in-out;
+    }
+    .container .top-navbar{
+      padding: 0px 15px 0px 15px;
+    }
+    .container .top-navbar .menu{
+      display: block;
+    }
+    
+  }
+
+
+
+.page-title{
+  font-size: 19px;
+    font-weight: bold;
+    display: flex;
+    gap:30px;
+    color: gray;
+}
+.page-title .page-main-title{
+  color: rgb(85, 63, 146);;
+}
+.page-title .page-sub-title{
+  color: rgb(48, 20, 127);
+}
+
+.profile:hover{
+ /* cursor: pointer;  */
+/*  background-color: rgb(255, 255, 255);*/
+  color: var(--basecolor);
+}
+
+
+/* button format */
+.btn{
+  cursor: pointer;
+  font-size: 15px;
+  padding: 12px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  background-color:  rgb(48, 20, 127);
+  color: white;
+  margin: 10px;
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap:20px;
+  
+}
+
+.welcome{
+  color: white;
+}
+
+
+.container2{
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    padding: 5%;
+    background-image: linear-gradient(rgba(53, 65, 134, 0.721),rgba(8, 10, 21, 0.567)),url(../auth/resources/img/back.jpg);
+    background-position: center;
+    background-size: cover;
+
+}
+
+.search-bar{
+   width: 100%;
+   max-width: 700px;
+   background: rgba(255,255,255,0.2);
+   display: flex;
+   align-items: center;
+   border-radius: 60px;
+   padding: 10px 20px;
+}
+
+.search-bar input{
+  background:transparent;
+  flex: 1;
+  border: 0;
+  outline: none;
+  padding: 24px 20px;
+  font-size: 20px;
+  color: #cac7ff;
+}
+
+::placeholder{
+  color:#cac7ff
+}
+
+.serach-bar button img{
+  border: 0;
+  border-radius: 50%;
+  width: 60px;
+  background: #58629b;
+  cursor: pointer;
+}
+
+.srchimg{
+    height: 30px;
+}
+
+
+.know{
+  margin-top: 50px;
+ /* background-color: aliceblue;*/
+  background: rgba(255,255,255,0.2);
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  margin-left: 100px;
+  margin-right: 100px;
+
+}
+.search{
+  margin-top: 70px;
+}
+
+.button{
+  cursor: pointer;
+  font-size: 20px;
+  padding: 12px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  background-color:  rgb(48, 20, 127);
+  color: white;
+  margin: 10px;
+  width: 200px;
+  height: 100px;
+  margin-left: 10px;
+
+}
+
+.button:hover{
+  background-color: rgb(71, 34, 173);
+}
+
+.know2{
+  margin-left: 50px;
+  background-color: #eae9ffa1;
+  border-radius: 8px;
+  padding: 20px;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
